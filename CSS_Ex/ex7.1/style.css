@@ -1,0 +1,39 @@
+.container{
+    padding: 10px 300px 10px 300px;
+    border: black 1px solid;
+}
+.header{
+    text-align: center;
+        background-color: orange;
+    border: black 1px solid;
+    }
+    .side-main-container{
+        display: flex;
+        height: 300px;
+    }
+.side{
+    background-color: green;
+    border: black 1px solid;
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 25%;
+}
+.side-text{
+    margin-left: 10px;
+}
+.main{
+    background-color: purple;
+    border: black 1px solid;
+    margin-top: 5px;
+    width: 75%;
+}
+.main-text{
+    float: right;
+    margin-right: 10px;
+}
+.footer{
+    text-align: center;
+    background-color: blue;
+    border: black 1px solid;
+    margin-top: 5px;
+}

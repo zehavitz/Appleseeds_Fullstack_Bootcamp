@@ -1,0 +1,371 @@
+@font-face {
+  font-family: 'TeslaFont';
+  src: url(/TESLA_Model3_Weekend_Assignment/GothamMediumRegular.ttf); 
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "TeslaFont"   
+}
+
+/* Top Navbar */
+#top-navbar {
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+  width: 140px;
+  height: 40px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+.top-navbar-center{
+      margin-left: 150px;
+  }
+  #top-navbar a {
+      text-decoration: none;
+    color: #fff;
+  }
+  #top-navbar ul {
+    font-size: 14px;
+    list-style: none;
+    display: flex;
+    font-weight: 400;
+  }
+  
+  #top-navbar ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+    .top-navbar-menu-btn{
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  .top-navbar-menu-img{
+    height: 12px;
+    width: 18px;
+  }
+.model3-page{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(/TESLA_Model3_Weekend_Assignment/img/model-3-hero-desktop.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size:cover;
+}
+.model3-page-header{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 40px;
+    color: white;
+}
+#model3-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+#model3-footer ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  #model3-footer ul li {
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .model3-footer-list-middle{
+      border-right: 1px solid white;
+      border-left: 1px solid white;
+      padding-right: 15px;
+      padding-left: 15px;
+  }
+
+  .model3-footer-list-header{
+     font-size: 28px;
+     font-weight: 500; 
+  }
+  .model3-footer-list-sub-header{
+    font-size: 12px;
+    font-weight: 400; 
+   }
+  .model3-footer-btn {
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
+    transition-duration: 0.4s;
+    padding: 9px 24px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 30px;
+    outline: none;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.model3-footer-btn:hover{
+    color: black;
+    background-color:white; 
+  }
+
+  .safety-page{
+    display: flex;
+    height: 100vh;
+  }
+  .safety-page-left{
+    width: 470px;
+    padding-left: 40px ;
+    padding-right: 20px;
+    margin-top: 40px;
+  }
+  .safety-page-right{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(/TESLA_Model3_Weekend_Assignment/img/model_3_safety_hero.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+.safety-page-sub-header{
+  font-size: 17px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  text-decoration: none solid rgb(23, 26, 32);
+}
+.safety-page-header{
+  font-size: 28px;
+  line-height: 36px;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  text-decoration: none solid rgb(23, 26, 32);
+}
+.safety-page-paragraph{
+  color: #8d8f92;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+#safety-page-footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-top: 70%;
+}
+#safety-page-footer ul {
+  display: flex;
+  justify-content: start;
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+#safety-page-footer ul li {
+  color: white;
+  padding-right: 20px;
+}
+
+.safety-page-footer-learn-btn {
+  color: black;
+  border: 3px solid black;
+  transition-duration: 0.4s;
+  padding: 6px 10px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 30px;
+  outline: none;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 11px;
+}
+.safety-page-footer-learn-btn-text{
+font-weight: 400;
+font-size: 12px;
+line-height: 21px;
+color: #8d8f92;
+cursor: pointer;
+}
+.safety-page-footer-learn-btn:hover{
+  color: white;
+  background-color:black; 
+}
+
+.safety-page-footer-order-btn{
+  color: #8d8f92;
+  border: 3px solid black;
+  transition-duration: 0.4s;
+  padding: 9px 24px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 30px;
+  outline: none;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.safety-page-footer-order-btn:hover{
+  color: white;
+  background-color:black; 
+}
+
+.performance-page-top{
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: url(/TESLA_Model3_Weekend_Assignment/img/lhd-performance-hero-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.performance-page-middle-list{
+position: relative;
+top: 70%;
+display: flex;
+color: white;
+list-style: none;
+align-items: center;
+justify-content: center;
+margin: 0;
+}
+
+.performance-page-middle-list li{
+color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.performance-page-middle-list-middle{
+  border-right: 1px solid white;
+      border-left: 1px solid white;
+      padding-right: 15px;
+      padding-left: 15px;
+}
+
+.performance-page-middle-list-header{
+  font-size: 28px;
+  font-weight: 500; 
+}
+
+.performance-page-middle-list-sub-header{
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.performance-page-footer{
+  justify-content: center;
+display: flex;
+margin-top: 20px;
+padding-bottom: 70px;
+}
+
+.performance-page-footer-left{
+width: 30%;
+}
+
+.performance-page-footer-right{
+  width: 47%;
+}
+
+.performance-page-footer-right-paragraph{
+  color: #8d8f92;
+  font-size: 14px;
+line-height: 21px;
+font-weight: 400;
+}
+
+.performance-page-footer-left-sub-header{
+  font-size: 17px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  text-decoration: none solid rgb(23, 26, 32);
+}
+.performance-page-footer-left-header{
+  font-size: 28px;
+  line-height: 36px;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  text-decoration: none solid rgb(23, 26, 32);
+}
+
+.performance-page-footer-left-btn-list{
+margin-top: 30px;
+  display: flex;
+list-style: none;
+padding-inline-start: 0;
+}
+.performance-page-footer-learn-btn {
+  color: black;
+  border: 3px solid black;
+  transition-duration: 0.4s;
+  padding: 6px 10px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 30px;
+  outline: none;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 11px;
+}
+.performance-page-footer-learn-btn-text{
+font-weight: 400;
+font-size: 12px;
+line-height: 21px;
+color: #8d8f92;
+cursor: pointer;
+}
+.performance-page-footer-learn-btn:hover{
+  color: white;
+  background-color:black; 
+}
+
+.performance-page-footer-order-btn{
+  color: #8d8f92;
+  border: 3px solid black;
+  transition-duration: 0.4s;
+  padding: 9px 24px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 30px;
+  outline: none;
+  text-decoration: none;
+  font-weight: bold;
+margin-left: 30px;
+}
+
+.performance-page-footer-order-btn:hover{
+  color: white;
+  background-color:black; 
+}
+
