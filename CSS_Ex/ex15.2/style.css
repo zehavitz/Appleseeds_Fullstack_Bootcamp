@@ -1,0 +1,29 @@
+* {
+box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.container >div{
+    height: 200px;
+    width: 200px;
+    padding-left: 10px;
+    }
+
+.box1 {
+display: flex;
+justify-content: left;
+background: green;
+}
+
+.box2 {
+    background: blue;
+}
+
+.box3 {
+    background: red;
+}

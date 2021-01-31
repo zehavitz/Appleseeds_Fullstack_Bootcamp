@@ -1,0 +1,14 @@
+.container{
+    padding:0;
+}
+p{
+    text-align: center;
+    background-color: orange;
+    border: black 1px solid;
+    font-size: 4vw;
+
+@media screen and (min-width: 300px){
+    p{
+        background-color: red;
+        font-size: 30px;
+    }

@@ -59,6 +59,7 @@ body{
     background-repeat: no-repeat;
     height: 100vh;
     background-size:cover;
+    background-position: center top;
 }
 .model3-page-header{
     text-align: center;
@@ -141,6 +142,7 @@ body{
     background-image: url(../img/model_3_safety_hero.png);
     background-repeat: no-repeat;
     background-size:cover;
+    background-position: center top;
   }
 .safety-page-sub-header{
   font-size: 17px;
@@ -237,6 +239,7 @@ cursor: pointer;
   background-image: url(../img/lhd-performance-hero-desktop.jpg);
   background-repeat: no-repeat;
   background-size:cover;
+  background-position: center top;
 }
 
 .performance-page-middle-list{
