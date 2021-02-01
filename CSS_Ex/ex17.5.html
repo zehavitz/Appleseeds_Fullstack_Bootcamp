@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+        padding: 0;
+            margin: 0;
+            }
+
+        .container {
+            padding: 50px;
+            display: flex;
+            height: 100vh;
+        }
+
+  .tooltip {
+  position:relative; /* making the .tooltip span a container for the tooltip text */
+  border-bottom:1px dashed #000; /* little indicater to indicate it's hoverable */
+}
+
+  .tooltip:before {
+  content: attr(data-text); /* here's the magic */
+  position:absolute;
+  
+  /* vertically center */
+  top:50%;
+  transform:translateY(-50%);
+  
+  /* move to right */
+  left:100%;
+  margin-left:15px; /* and add a small left margin */
+  
+  /* basic styles */
+  width:200px;
+  padding:10px;
+  border-radius:10px;
+  background:yellow;
+  color: black;
+  text-align:center;
+
+  display:none; /* hide by default */
+  }
+.tooltip:hover:before {
+  display:block;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet <span data-text="this is a badass tooltip"  class="tooltip">adipisicing elit </span>. Nesciunt deleniti facere aliquid provident error omnis rerum, incidunt, laboriosam veniam soluta accusamus natus excepturi magnam minus nostrum. Incidunt ea ratione harum, ipsa voluptate, placeat eligendi odit cupiditate, corrupti porro non ipsum tenetur quod? Quam nulla necessitatibus ipsam hic perspiciatis minus consequatur.</p>
+    </div>
+</body>
+</html>
