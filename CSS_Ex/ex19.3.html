@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+    }
+
+    .box1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background: white;
+        border: black 2px solid;
+        width: 200px;
+        height: 200px;
+    }
+
+    .box1::after{  
+        content: "";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background: transparent;
+        width: 200px;
+        height: 200px;
+        transform: translatey(-200px);
+        transition: all 1s;
+         }
+
+    .box1:hover::after{
+        content: "YEAH!";
+        transform: translatey(0);
+        background: red;
+        border: black 2px solid;
+    }
+
+    .box2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background: white;
+        border: black 2px solid;
+        width: 200px;
+        height: 200px;
+    }
+
+    .box2::after{  
+        content: "";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background: transparent;
+        width: 200px;
+        height: 200px;
+        transform: translatex(-200px);
+        transition: all 1s;
+         }
+
+    .box2:hover::after{
+        transform: translatex(0);
+        background: black;
+        opacity: 0.8;
+        border: black 2px solid;
+    }
+
+
+</style>
+<body>
+    <div>
+        <div class="box1">TranslateY</div>
+        </div>
+        <div>
+        <div class="box2">Translate</div>
+    </div>
+</body>
+</html>

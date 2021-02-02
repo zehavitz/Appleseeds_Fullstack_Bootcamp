@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes</title>
+</head>
+<style>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .box{
+        position: relative;
+        background:purple;
+        width: 200px;
+        height: 200px;
+    }
+
+    .box::after{
+        content: "";
+        position: absolute;
+        background: red;
+        transform:translate(0);
+        width: 200px;
+        height: 200px;
+        transform: translateX(-200px);
+        transition: all 1s;
+
+         }
+
+    .box:hover::after{
+        transform: translatex(0);
+        background: green;
+    }
+
+</style>
+
+<body>
+    <div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
