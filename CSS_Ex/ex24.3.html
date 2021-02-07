@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+
+
+body {
+    display: flex;
+    justify-content: center;
+  margin: 20px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+  }
+
+  .content {
+    grid-area: content;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+
+
+  .wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-areas:
+    "header header header header"
+    "sidebar content content sidebar2"
+    "footer  footer  footer footer";
+    }
+
+.box {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.6;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.sidebar {
+    background: rgb(99, 99, 247);
+}
+
+.content {
+    background: rgb(49, 204, 49);
+}
+
+.sidebar2 {
+    background: rgb(165, 71, 233);
+}
+
+.header {
+    background: rgb(250, 45, 86);
+}
+.footer {
+  background-color:rgb(240, 240, 64);
+}
+
+@media(max-width: 768px) {
+    .wrapper {
+    grid-template-columns: 200px 200px;
+    grid-template-areas:
+    "header header"
+    "sidebar content"
+    "sidebar2 content"
+    "footer footer";
+    }
+}
+
+@media(max-width: 500px) {
+    .wrapper {
+    grid-template-columns: 200px;
+    grid-template-areas:
+    "header"
+    "sidebar"
+    "content"
+    "sidebar2"
+    "footer";
+    }
+}
+
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="box header">Header</div>
+  <div class="box sidebar">Sidebar</div>
+  <div class="box content">Content
+    <br /> More content than we had before so this column is now quite tall.</div>
+    <div class="box sidebar2">Sidebar2</div>
+    <div class="box footer">Footer</div>
+</div>
+
+</body>
+</html>

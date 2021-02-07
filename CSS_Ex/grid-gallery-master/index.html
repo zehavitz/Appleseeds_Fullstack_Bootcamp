@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <style>
+
+.gallery-grid {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(4,auto); 
+  grid-gap: 1rem;
+  grid-auto-flow: column;
+}
+
+.gallery-img {
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.gallery-img:hover {
+  opacity: .7;
+}
+</style>
+</head>
+<body>
+  <div class="gallery-grid">
+      <img class="gallery-img" src="../grid-gallery-master/images/gal-1.jpeg" alt="" title="">
+      <img class="gallery-img" src="../grid-gallery-master/images/gal-2.jpeg" alt="" title="">
+      <img class="gallery-img" src="../grid-gallery-master/images/gal-3.jpeg" alt="" title="">
+      <img class="gallery-img" src="../grid-gallery-master/images/gal-4.jpeg" alt="" title="">
+      <img class="gallery-img" src="../grid-gallery-master/images/gal-5.jpeg" alt="" title="">
+      <img class="gallery-img" src="../grid-gallery-master/images/gal-6.jpeg" alt="" title="">
+      <img class="gallery-img" src="../grid-gallery-master/images/gal-7.jpeg" alt="" title="">
+      <img class="gallery-img" src="../grid-gallery-master/images/gal-8.jpeg" alt="" title="">
+      <img class="gallery-img" src="../grid-gallery-master/images/gal-9.jpeg" alt="" title="">
+      <img class="gallery-img" src="../grid-gallery-master/images/gal-10.jpeg" alt="" title="">
+      <img class="gallery-img" src="../grid-gallery-master/images/gal-11.jpeg" alt="" title="">
+      <img class="gallery-img" src="../grid-gallery-master/images/gal-12.jpeg" alt="" title="">
+      <img class="gallery-img" src="../grid-gallery-master/images/gal-13.jpeg" alt="" title="">
+      <img class="gallery-img" src="../grid-gallery-master/images/gal-14.jpeg" alt="" title="">
+  </div>
+</body>
+</html>
